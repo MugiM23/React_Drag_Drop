@@ -22,7 +22,7 @@ export default function ContentTitle() {
     return <div className='d-flex align-items-center p-2 light-bg justify-content-between'>
         <div className='d-flex align-items-center'>
             <div className='px-2'>
-                <img src='/images/briefcase.png' alt='briefcase' className='smallIcon' />
+                <img src='images/briefcase.png' alt='briefcase' className='smallIcon' />
             </div>
             <label className='font-light'>{strings.global.JOBS}</label>
             <RightOutlined className='extra_font_small px-2' />
