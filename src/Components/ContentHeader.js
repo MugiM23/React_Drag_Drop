@@ -55,7 +55,7 @@ export default function ContentHeader() {
         </div>
         <div className='d-flex justify-content-between align-items-center'>
             <div className='px-2'>
-                <img src='/images/menu-button-of-three-horizontal-lines.png' alt='hamburger' className='smallIcon' />
+                <img src='images/menu-button-of-three-horizontal-lines.png' alt='hamburger' className='smallIcon' />
             </div>
             <FilterFilled className='px-2' style={{color:'#63747e'}} />
             <UploadOutlined className='px-2' style={{color:'#63747e'}} />

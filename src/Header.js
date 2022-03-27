@@ -21,7 +21,7 @@ export default function Header() {
     
     <div className='d-flex p-2 justify-content-between align-items-center small_bottomBorder' >
       <div>
-        <img src='/images/user_icon.png' className='mediumIcon' alt='' />
+        <img src='images/user_icon.png' className='mediumIcon' alt='' />
         <label className='px-2'>{strings.global.COMP_TITLE}</label>
       </div>
       <div className='d-flex align-items-center'>
