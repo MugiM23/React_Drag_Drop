@@ -63,8 +63,8 @@ export default function ContentBody() {
     const result = Array.from(list.details);
     const [removed] = result.splice(startIndex, 1);
     result.splice(endIndex, 0, removed);
-    let updatedResult = { ...list, details: result }
-    return updatedResult;
+    return { ...list, details: result }
+    ;
   };
   const move = (source, destination, droppableSource, droppableDestination) => {
     const sourceClone = Array.from(source.details);
@@ -116,14 +116,14 @@ export default function ContentBody() {
                       draggableId={`${item.id}`}
                       index={index}
                     >
-                      {(provided, snapshot) => (
+                      {(draggableItemProvided, draggalbeSnapShot) => (
                         <div
-                          ref={provided.innerRef}
-                          {...provided.draggableProps}
-                          {...provided.dragHandleProps}
+                          ref={draggableItemProvided.innerRef}
+                          {...draggableItemProvided.draggableProps}
+                          {...draggableItemProvided.dragHandleProps}
                           style={getItemStyle(
-                            snapshot.isDragging,
-                            provided.draggableProps.style,
+                            draggalbeSnapShot.isDragging,
+                            draggableItemProvided.draggableProps.style,
                             index
                           )}
                         >

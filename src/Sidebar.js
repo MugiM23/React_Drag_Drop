@@ -10,8 +10,8 @@ const { Sider } = Layout;
 export default function Sidebar() {
 	const [collapsed, setCollapsed] = useState(false)
 
-	const onCollapse = collapsed => {
-		setCollapsed(collapsed)
+	const onCollapse = status => {
+		setCollapsed(status)
 	};
 
 	return <Sider collapsible collapsed={collapsed} onCollapse={onCollapse}>

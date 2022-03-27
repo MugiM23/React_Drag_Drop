@@ -11,7 +11,7 @@ const { Search } = Input;
 
 export default function Header() {
 
-  const { setSearchText, searchText } = useContext(AppContext)
+  const { setSearchText } = useContext(AppContext)
   
   const onSearch = _debounce((keyword) => {
     setSearchText(keyword)

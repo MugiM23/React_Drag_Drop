@@ -6,7 +6,7 @@ import KanbanBoardContent from './KanbanBoardContent';
 
 
 
-export default class SiderDemo extends React.Component {
+export default class KanbanBoardContainer extends React.Component {
     render() {
         return (
             <Layout style={{ minHeight: '100vh' }} className='w-100'>
